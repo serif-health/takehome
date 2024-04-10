@@ -29,12 +29,9 @@ Your task is to write some code that can open an index file, stream through it, 
 
 
 ## Inputs
-The input to this takehome is the Anthem machine readable index file [table of contents](https://antm-pt-prod-dataz-nogbd-nophi-us-east1.s3.amazonaws.com/anthem/2024-03-01_anthem_index.json.gz) for March 2024. 
+The input to this takehome is the Anthem machine readable index file [table of contents](https://antm-pt-prod-dataz-nogbd-nophi-us-east1.s3.amazonaws.com/anthem/2024-04-01_anthem_index.json.gz) for April 2024. 
 
-You should write code that can open the machine readable index file and process it according to the schema published at [CMS' transparency in coverage repository](https://github.com/CMSgov/price-transparency-guide/tree/master/schemas/table-of-contents), so you can extract the data requested.
-
-
-
+You should write code that can open the machine readable index file and extract some in-network file URLs from it according to the schema published at [CMS' transparency in coverage repository](https://github.com/CMSgov/price-transparency-guide/tree/master/schemas/table-of-contents), so you can extract the data requested.
 
 ## Outputs
 Your output should be the list of machine readable file URLs corresponding to Anthem's PPO in New York state. Make sure to read through the hints and pointers section before declaring your solution complete.
@@ -44,10 +41,10 @@ As you start working with the index, you'll quickly notice that the index file i
 
 - How do you handle the file size and format efficiently, when the uncompressed file will exceed memory limitations on most systems? 
 - When you look at your output URL list, which segments of the URL are changing, which segments are repeating, and what might that mean?
-- Is the description field helpful? Complete? Is Highmark the same as Anthem?
-- Anthem has an interactive MRF lookup system. This lookup can be used to gather additional information - but it requires you to input the EIN or name of an employer who offers an Anthem health plan: [Anthem EIN lookup](https://www.anthem.com/machine-readable-file/search/). How can you find a businesss likely to be in the Anthem NY PPO? How can you use this tool to confirm which underlying file(s) represent the Anthem NY PPO?
+- Is the 'description' field helpful? Is it complete? Does it change relative to 'location'? Is Highmark the same as Anthem?
+- Anthem has an interactive MRF lookup system. This lookup can be used to gather additional information - but it requires you to input the EIN or name of an employer who offers an Anthem health plan: [Anthem EIN lookup](https://www.anthem.com/machine-readable-file/search/). How might you find a business likely to be in the Anthem NY PPO? How can you use this tool to confirm if your answer is complete?
 
-Use your best judgement to proceed here, and discuss your decisions in your writeup. 
+Use creative thinking and your best judgement to proceed here, and discuss your decisions in your writeup. 
 
 
 ### Deliverable
