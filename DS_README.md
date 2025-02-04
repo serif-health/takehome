@@ -1,11 +1,14 @@
 
 # Data Scientist Take-Home Assignment
 
-Welcome to the Data Scientist take-home assignment. This exercise is designed to assess your ability to integrate and harmonize disparate data sources into a unified schema. 
+Welcome to the take-home assignment for the Serif Health Data Scientist role. This exercise is designed to assess your ability to integrate and harmonize disparate data sources into a unified schema and connect the respective data rows that should be comparable. 
 
 ## Objective
+At Serif Health, our goal is to make healthcare price transparency easy. One reason it is not easy is because, well, very little about healthcare is easy, and even when there are rules and guardrails, the various participants in the healthcare market don't always follow them. 
 
-Your task is to combine two distinct data samples consisting of three hospitals' pricing data for ten distinct medical billing codes. One sample came from the Transparency in Coverage data, the other from the Hospital Price Transparency files for those specific hospitals. The objective is to combine both into a cohesive and unified schema that aligns each billing code / payer / hospital combination to identify the reimbursement rates common in both datasets. At that point, you should be able to identify which data points align and to what degree. 
+Case in point - there are two different main datasets for transparency, one produced by health insurers and another produced by hospitals. Each has a different schema, with varying degrees of exactness and compltion.
+
+Your task is to combine a small extract from each of these two distinct data samples consisting of three hospitals' pricing data for ten distinct medical billing codes. One sample comes from the Transparency in Coverage data, the other comes from the Hospital Price Transparency files hosted by those specific hospitals. The objective is to combine both samples into a cohesive and unified schema that aligns each billing code / payer / hospital combination to identify the reimbursement rates common in both datasets. At that point, you should be able to identify to what degree these data sets agree or disagree. 
 
 ### Concrete Example
 The negotiated Aetna Commercial reimbursement rate for CPT/HCPCS code 43239 (an endoscopy and biospy procedure) at Montefiore Medical Center is listed at 1246.73 in their hospital file. When you look for montefiore's There are many different rates Aetna's commercial payer files list for 43239. Which is best? How might you align the sources?
