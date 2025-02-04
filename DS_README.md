@@ -46,7 +46,7 @@ Each data sample has its own unique schema, format, and content. Your goal is to
      - Any other relevant information that would help in understanding and evaluating your work.
 
 4. **Submission**:
-   - Once you have completed the assignment, share the link to your repository with us for evaluation, by email us at [mailto:engineering@serifhealth.com](engineering@serifhealth.com)
+   - Once you have completed the assignment, share the link to your repository with us for evaluation, by email us at [engineering@serifhealth.com](mailto:engineering@serifhealth.com)
 
 ## Evaluation Criteria
 
