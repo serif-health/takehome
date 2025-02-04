@@ -31,7 +31,7 @@ Each data sample has its own unique schema, format, and content. Your goal is to
 ## Expectations
 
 - **Programming Language & Libraries**: You can use any appropriate language, libraries, frameworks, or toolchain that you deem appropriate.
-- **Output**: A unified dataset resulting from the integration of the two data samples, as well as any Python scripts, SQL, notebooks, or code extracts you use to get the job done, along with a README that explains your approach, including any assumptions, methodologies, and decisions made during the process.
+- **Output**: A single output dataset resulting from the integration of the two data samples. At the row level, the presence of a data point from either the hospital or payer data (or both, and the relative delta between them, in the case of a match) should be shown. You should share any Python scripts, SQL, notebooks, or code extracts you use to get the job done, along with a README that explains your approach, including any assumptions, methodologies, and decisions made during the process.
 - **Time Investment**: We are a small engineering team with limited resources, and often have to make hard tradeoffs to meet deadlines and make rapid forward progress. We do not want this takehome to take more than a few hours out of your day. So, please timebox any solution to two hours max, and know that you have the opportunity to discuss the tradeoffs you made when submitting your solution. If you finish early, we'd recommend adding additional notes or commentary to the README (e.g. discussion of performance characteristics, how you would ideally test and release this in a production environment, feature iterations that might come next, so on).
  
 ## Submission Guidelines
@@ -52,10 +52,10 @@ Each data sample has its own unique schema, format, and content. Your goal is to
 
 Your submission will be evaluated based on the following criteria:
 
-- **Correctness**: The degree to which your unified dataset accurately connects rate records between the two data samples. There is no perfect answer, and there are some very hard subproblems that may not be solvable in a couple hours - that's ok. Just document those as todo's for future.
+- **Correctness**: The degree to which your unified dataset accurately connects rate records between the two data samples. There is no perfect answer, and there are some very hard subproblems that will not be solvable in a couple hours - that's ok. Just do what's sensible, and document any followups and todo's you'd tackle if you had more time.
 - **Code Quality**: Clarity, organization, and efficiency of your code.
 - **Documentation**: Completeness and clarity of your documentation, including the README file.
-- **Assumptions and Decisions**: Justification and reasoning behind any assumptions or decisions made during the integration process.
+- **Assumptions and Decisions**: Justification and reasoning behind any assumptions or decisions made during the process.
 
 We look forward to reviewing your submission! If you have any questions or need further clarification, please do not hesitate to reach out.
 
