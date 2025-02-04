@@ -28,11 +28,10 @@ You have been provided with two data samples:
 
 Each data sample has its own unique schema, format, and content. Your goal is to analyze these samples and determine the best approach to integrate them into a unified schema.
 
-## Requirements
+## Expectations
 
 - **Programming Language & Libraries**: You can use any appropriate language, libraries, frameworks, or toolchain that you deem appropriate.
-- **Output**: A unified dataset resulting from the integration of the two data samples, as well as any Python scripts, SQL, notebooks, or code extracts you use to get the job done.
-- **Documentation**: A comprehensive explanation of your approach, including any assumptions, methodologies, and decisions made during the process.
+- **Output**: A unified dataset resulting from the integration of the two data samples, as well as any Python scripts, SQL, notebooks, or code extracts you use to get the job done, along with a README that explains your approach, including any assumptions, methodologies, and decisions made during the process.
 - **Time Investment**: We are a small engineering team with limited resources, and often have to make hard tradeoffs to meet deadlines and make rapid forward progress. We do not want this takehome to take more than a few hours out of your day. So, please timebox any solution to two hours max, and know that you have the opportunity to discuss the tradeoffs you made when submitting your solution. If you finish early, we'd recommend adding additional notes or commentary to the README (e.g. discussion of performance characteristics, how you would ideally test and release this in a production environment, feature iterations that might come next, so on).
  
 ## Submission Guidelines
