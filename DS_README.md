@@ -23,8 +23,8 @@ This will involve:
 
 You have been provided with two data samples:
 
-1. **Payer Data Sample**: [https://mrf.serifhealth.com/public/payer_extract_202502.csv](Download)
-2. **Hospital Data Sample**: [https://mrf.serifhealth.com/public/hospital_extract_202502.csv](Download)
+1. **Payer Data Sample**: [Download](https://mrf.serifhealth.com/public/payer_extract_202502.csv)
+2. **Hospital Data Sample**: [Download](https://mrf.serifhealth.com/public/hospital_extract_202502.csv)
 
 Each data sample has its own unique schema, format, and content. Your goal is to analyze these samples and determine the best approach to integrate them into a unified schema.
 
