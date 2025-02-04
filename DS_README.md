@@ -1,7 +1,7 @@
 
 # Data Scientist Take-Home Assignment
 
-Welcome to the take-home assignment for the Serif Health Data Scientist role. This exercise is designed to assess your ability to integrate and harmonize disparate data sources into a unified schema and connect the respective data rows that should be comparable. 
+Welcome to the take-home assignment for the Serif Health Data Scientist role. This exercise is designed to assess your ability to integrate and harmonize different data sources into a unified schema and connect respective data rows that should be comparable. 
 
 ## Objective
 At Serif Health, our goal is to make healthcare price transparency easy. One reason it is not easy is because, well, very little about healthcare is easy, and even when there are rules and guardrails, the various participants in the healthcare market don't always follow them. 
