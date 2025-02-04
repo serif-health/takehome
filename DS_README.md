@@ -8,7 +8,7 @@ At Serif Health, our goal is to make healthcare price transparency easy. One rea
 
 Case in point - there are two different main datasets for transparency, one produced by health insurers and another produced by hospitals. Each has a different schema, and each respective insurer and hospital comply to varying degrees of correctness and completeness.
 
-Your task is to combine a small extract from each of these two distinct data samples consisting of three hospitals' pricing data for three distinct medical billing codes. One sample comes from the Transparency in Coverage data, the other comes from the Hospital Price Transparency files hosted by those specific hospitals. The objective is to combine both samples into a cohesive and unified schema that aligns each billing code / payer / hospital combination. Do your best to identify the records that are common in both datasets and identify to what degree these data sets agree or disagree. 
+Your task is to combine a small extract from each of these two distinct data samples. One sample comes from the Transparency in Coverage data, the other comes from the Hospital Price Transparency files hosted by those specific hospitals. The objective is to combine both samples into a cohesive and unified schema that aligns each billing code / payer / hospital combination. Do your best to identify the records that are common in both datasets and identify to what degree these data sets agree or disagree. 
 
 ### Concrete Example
 The negotiated Aetna Commercial reimbursement rate for CPT/HCPCS code 43239 (an endoscopy and biospy procedure) at Montefiore Medical Center is listed at 1246.73 in their hospital file. When you look for the same hospital entity in the Aetna payer dataset, you'll find many different rates for 43239. Which rate is best to cross-compare? How might you align the sources?
@@ -26,7 +26,7 @@ You have been provided with two data samples:
 1. **Payer Data Sample**: [Download](https://mrf.serifhealth.com/public/payer_extract_20250203.csv)
 2. **Hospital Data Sample**: [Download](https://mrf.serifhealth.com/public/hospital_extract_20250203.csv)
 
-Each data sample has its own unique schema, format, and content. Your goal is to analyze these samples and determine the best approach to integrate them into a unified schema.
+Each data sample has its own unique schema, format, and content. The hospital extract consisting of three hospitals' pricing data for three distinct medical billing codes. The payer extract has the same three billing codes, extracted from three of the largest (Cigna / Aetna / UHC) commercial payers' national PPO files, for the relevant hospitals. Your goal is to analyze these samples and determine the best approach to integrate their data into a unified schema.
 
 ## Expectations
 
@@ -52,7 +52,7 @@ Each data sample has its own unique schema, format, and content. Your goal is to
 
 Your submission will be evaluated based on the following criteria:
 
-- **Correctness**: The degree to which your unified dataset accurately connects rate records between the two data samples. There is no perfect answer, and there are some very hard subproblems that will not be solvable in a couple hours - that's ok. Just do what's sensible, and document any followups and todo's you'd tackle if you had more time.
+- **Correctness**: The degree to which your unified dataset accurately connects rate records between the two data samples. There is no perfect answer, and there are some very hard subproblems that will not realistically be solvable in a couple hours - that's ok. Just do what's sensible, and document any followups and todo's you'd tackle if you had more time.
 - **Code Quality**: Clarity, organization, and efficiency of your code.
 - **Documentation**: Completeness and clarity of your documentation, including the README file.
 - **Assumptions and Decisions**: Justification and reasoning behind any assumptions or decisions made during the process.
