@@ -6,7 +6,7 @@ Welcome to the take-home assignment for the Serif Health Data Scientist role. Th
 ## Objective
 At Serif Health, our goal is to make healthcare price transparency easy. One reason it is not easy is because, well, very little about healthcare is easy, and even when there are rules and guardrails, the various participants in the healthcare market don't always follow them. 
 
-Case in point - there are two different main datasets for transparency, one produced by health insurers and another produced by hospitals. Each has a different schema, with varying degrees of exactness and compltion.
+Case in point - there are two different main datasets for transparency, one produced by health insurers and another produced by hospitals. Each has a different schema, and each respective insurer and hospital comply to varying degrees of correctness and completeness.
 
 Your task is to combine a small extract from each of these two distinct data samples consisting of three hospitals' pricing data for ten distinct medical billing codes. One sample comes from the Transparency in Coverage data, the other comes from the Hospital Price Transparency files hosted by those specific hospitals. The objective is to combine both samples into a cohesive and unified schema that aligns each billing code / payer / hospital combination to identify the reimbursement rates common in both datasets. At that point, you should be able to identify to what degree these data sets agree or disagree. 
 
