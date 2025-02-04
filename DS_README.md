@@ -11,7 +11,7 @@ Case in point - there are two different main datasets for transparency, one prod
 Your task is to combine a small extract from each of these two distinct data samples consisting of three hospitals' pricing data for ten distinct medical billing codes. One sample comes from the Transparency in Coverage data, the other comes from the Hospital Price Transparency files hosted by those specific hospitals. The objective is to combine both samples into a cohesive and unified schema that aligns each billing code / payer / hospital combination to identify the reimbursement rates common in both datasets. At that point, you should be able to identify to what degree these data sets agree or disagree. 
 
 ### Concrete Example
-The negotiated Aetna Commercial reimbursement rate for CPT/HCPCS code 43239 (an endoscopy and biospy procedure) at Montefiore Medical Center is listed at 1246.73 in their hospital file. When you look for montefiore's There are many different rates Aetna's commercial payer files list for 43239. Which is best? How might you align the sources?
+The negotiated Aetna Commercial reimbursement rate for CPT/HCPCS code 43239 (an endoscopy and biospy procedure) at Montefiore Medical Center is listed at 1246.73 in their hospital file. When you look for the same hospital entity in the Aetna payer dataset, you'll find many different rates for 43239. Which rate is best to cross-compare? How might you align the sources?
 
 This will involve:
 - **Data Understanding**: Analyzing the structure and content of each data sample.
