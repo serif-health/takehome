@@ -23,8 +23,8 @@ This will involve:
 
 You have been provided with two data samples:
 
-1. **Payer Data Sample**: [Download](https://mrf.serifhealth.com/public/payer_extract_20250203.csv)
-2. **Hospital Data Sample**: [Download](https://mrf.serifhealth.com/public/hospital_extract_20250203.csv)
+1. **Payer (TiC) Data Sample**: [Download](https://mrf.serifhealth.com/public/tic_extract_20250213.csv)
+2. **Hospital (HPT) Data Sample**: [Download](https://mrf.serifhealth.com/public/hpt_extract_20250213.csv)
 
 Each data sample has its own unique schema, format, and content. The hospital extract consisting of three hospitals' pricing data for three distinct medical billing codes. The payer extract has the same three billing codes, extracted from three of the largest (Cigna / Aetna / UHC) commercial payers' national PPO files, for the relevant hospitals. Your goal is to analyze these samples and determine the best approach to integrate their data into a unified schema.
 
