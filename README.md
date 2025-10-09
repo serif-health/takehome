@@ -6,3 +6,7 @@ This repository contains the files and instructions for our takehome engineering
 [Data Science](https://github.com/serif-health/takehome/blob/main/DS_README.md)
 
 [Backend / API / Data Engineering](https://github.com/serif-health/takehome/blob/main/DE_README.md)
+
+[Frontend Engineering](https://github.com/serif-health/takehome/blob/main/FE_README.md)
+
+[Portfolio Submissions](https://github.com/serif-health/takehome/blob/main/PORTFOLIO.md)
