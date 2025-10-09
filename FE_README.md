@@ -6,7 +6,7 @@
 **Role**: Frontend Engineer  
 **Skills evaluated**: API integration / data fetching, data transformation, UI design (table + chart), responsiveness, code structure, choice of libraries, documentation & ease-of-use.  
 
----
+
 
 ## Overview
 
@@ -30,7 +30,7 @@ The endpoint returns JSON data representing Aetna of California price transparen
 
 You may mock the API response for local development if needed, but your final solution should fetch real data (as long as the endpoint is accessible).
 
----
+
 
 ## Requirements
 

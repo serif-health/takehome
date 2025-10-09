@@ -3,7 +3,6 @@
 **Role**: Frontend Engineer  
 **Purpose**: Showcase of prior work demonstrating frontend engineering and design abilities.
 
----
 
 ## Overview
 
@@ -11,7 +10,6 @@ As part of your application, we’d love to see a few examples of your past fron
 
 We’re especially interested in projects that show **interaction design**, **data visualization**, **API integration**, or **complex UI engineering**.
 
----
 
 ## What to Submit
 
@@ -43,7 +41,6 @@ Example format:
 **Outcome:** Improved data rendering speed by 3x; used by a team of 12 internal analysts daily for payer rate review.
 ```
 
----
 
 ## Evaluation Criteria
 
@@ -55,13 +52,13 @@ When reviewing portfolio projects, we’ll consider:
 | **Creativity & Insight** | Thoughtful problem solving |
 | **Impact** | Demonstrated usefulness, adoption, or measurable outcome |
 
----
+
 
 ## Submission
 
 Send your portfolio to [engineering@serifhealth.com](mailto:engineering@serifhealth.com) for review. 
 
----
+
 
 ## Tips
 
@@ -69,7 +66,6 @@ Send your portfolio to [engineering@serifhealth.com](mailto:engineering@serifhea
 - Context matters: tell us why you built it, what constraints existed, and how you approached them.  
 - Include visuals where possible — screenshots or GIFs help communicate your work instantly.
 
----
 
 **Thank you for sharing your work!**  
 We’re excited to learn more about your experience and creativity.
