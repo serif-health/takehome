@@ -24,7 +24,8 @@ You should fetch data from:
 ```
 https://neuron.serifhealth.com/api/rates/v1?network_template_ids=07c56f6b-82cd-44a4-af42-d570b6ae89c6&limit=1000&codes=99203
 ```
-An API key will be sent to you separately; if the key expires or goes over quota, contact engineering@serifhealth.com for  an updated API key.
+
+An API key will be sent to you separately; you should send it in an X-API-KEY header to pass authentication with the API. If the key expires, errors, or goes over quota, contact engineering@serifhealth.com for an updated API key. If you hit a rate limit, please make sure you're appropriately spacing out API call timing client-side.
 
 The endpoint returns JSON data representing Aetna of California price transparency / rate records for CPT code `99203`. Use that data as your input.
 
