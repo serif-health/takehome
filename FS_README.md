@@ -9,15 +9,15 @@
 
 ## Overview
 
-For this exercise, you will build a small full-stack application that reads a Transparency in Coverage index file, follows the referenced in-network rate files, normalizes the data, and makes it searchable through a user interface.
+For this exercise, you will build a small full-stack application that uses a Transparency in Coverage index file as a reference to find an in-network rate file link, ingests that file, exposes a simple API for searching, and displays formatted results in a UI.
 
 The goal is to show how you think about working with CMS-style machine-readable files end to end:
 
-1. Read and parse the index file
-2. Discover the in-network file URLs referenced in the index
-3. Load one or more rate files from those URLs
-4. Extract useful fields into a search-friendly shape
-5. Present the results in a UI that supports filtering and exploration
+1. Use the index file to identify a relevant in-network file URL
+2. Load the referenced in-network rate file
+3. Extract useful fields into a searchable shape
+4. Expose an API endpoint for searching by code and optional provider identifiers
+5. Present results in a formatted UI
 
 This is intentionally open-ended. We care more about clear decisions, a working implementation, and a UI that makes the data easy to explore than about building a perfect production-grade pipeline.
 
@@ -30,7 +30,7 @@ Use this index file as the starting point for your solution:
 https://www.centene.com/content/dam/centene/Centene%20Corporate/json/DOCUMENT/2026-04-28_fidelis_index.json
 ```
 
-If link above is out of date the new can be found here: https://www.centene.com/price-transparency-files.html 
+If link above is out of date then a new one can be found here: https://www.centene.com/price-transparency-files.html 
 
 This file follows the CMS Transparency in Coverage table-of-contents conventions described in the CMS guide:
 
@@ -45,24 +45,26 @@ Your submission should satisfy the following:
 
 ### Functional Requirements
 
-1. **Index Parsing**
-	- Fetch and parse the index file above.
-	- Extract the relevant in-network file URLs from the index structure.
+1. **Index File Reference**
+	- Use the index file above to identify relevant in-network file URL.
+        - Can manually download and review index file to select an in-network file to use. 
 
 2. **Rate File Ingestion**
-	- Fetch the referenced in-network rate files.
+	- Fetch the referenced in-network rate file.
 	- Normalize the data into a searchable shape.
-	- Keep the ingestion logic simple and workable for the provided files.
 
-3. **Searchable UI**
-	- Build a UI that lets a reviewer search and browse the loaded rate data.
-	- Include a required search input for a specific billing code.
-	- Support an optional set of provider identifiers to narrow results (for example NPI and/or EIN).
-	- Show enough context for a reviewer to understand what result they are looking at and which source file it came from.
+3. **API**
+	- Expose an API endpoint that returns search results from the normalized rate data.
+	    - The API should accept a required billing code and optional provider identifiers (for example NPI and/or EIN).
 
-4. **Error Handling**
+4. **Searchable UI**
+	- Build a UI that allows rate searching.
+		- Include a required search input for a specific billing code.
+		- Support optional provider identifiers to narrow results (for example NPI and/or EIN).
+	- Display search results in a formatted way.
+
+5. **Error Handling**
 	- Keep error handling basic so the app does not crash if a fetch or parse error is encountered.
-	- Show a simple loading or error state when something goes wrong.
 
 
 ## Deliverables
@@ -87,7 +89,7 @@ Your submission should satisfy the following:
 
 | Area | Expectations |
 |---|---|
-| Functionality | Index is parsed, rate files are loaded, code search works, optional provider identifier filtering works, interactions are reliable |
+| Functionality | Index is used to find an in-network file URL, rate file ingestion works, API search works, UI search works, optional provider identifier filtering works, and interactions are reliable |
 | Code Quality | Clean, modular, readable, and appropriately structured |
 | UI / UX | Clear presentation, useful search and filter controls, responsive layout |
 | Data Handling | Sensible normalization, resilient parsing, good source traceability |
@@ -99,6 +101,9 @@ Your submission should satisfy the following:
 
 - The index is a table-of-contents style file and may reference multiple plans and file URLs.
 - CMS transparency files can be large, nested, and inconsistent across issuers. A robust solution should not assume every file is perfectly uniform.
+- In many in-network files, provider details are kept in provider reference blocks (for example provider_references) and linked from negotiated rate entries by reference IDs. Think through how you will map those relationships.
+- Negotiated rates are usually attached to in-network items/services and often nested under negotiated_rates and negotiated_prices style structures. You may need to walk multiple nested levels to connect code, provider group, and price.
+- If provider identifiers are missing in one part of the file, check whether NPI or EIN appears in the related provider reference block instead of the negotiated price node itself.
 - A useful implementation often separates ingestion from presentation, even if both live in the same repo.
 - Consider whether you want to search by plan name, issuer, billing code, facility, location, or other fields exposed in the source files.
 - If you make simplifying assumptions, call them out clearly in the README.
