@@ -2,7 +2,7 @@
 
 ## Searchable Price Transparency Explorer
 
-**Time budget**: ~2–3 hours  
+**Time budget**: ~3 hours  
 **Role**: Full Stack Engineer  
 **Skills evaluated**: data ingestion, file parsing, backend/API design, frontend search and filtering, UI/UX, code structure, documentation, and pragmatic tradeoff decisions.
 
@@ -82,6 +82,7 @@ Your submission should satisfy the following:
 
 - **Programming Language & Libraries**: We use Vue.js and Golang internally, but you are welcome to submit in other languages, libraries, frameworks, or toolchains that you deem appropriate.
 - **Architecture**: Choose a reasonable split between backend and frontend responsibilities. For example, you might use the backend to fetch and normalize the files and the frontend to query the resulting dataset.
+- **Data Storage**: In-memory processing is acceptable for this take-home; you do not need to add a database. A database-backed approach can be treated as a follow-up extension for review discussion.
 - **Time Investment**: We are a small engineering team with limited resources, and often have to make hard tradeoffs to meet deadlines and make rapid forward progress. We do not want this takehome to take more than a few hours out of your day. Please timebox the technical work to 2–3 hours max, with additional time for documenting your learnings and decisions.
 
 
