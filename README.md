@@ -9,4 +9,6 @@ This repository contains the files and instructions for our takehome engineering
 
 [Frontend Engineering](https://github.com/serif-health/takehome/blob/main/FE_README.md)
 
+[Full Stack Engineering](https://github.com/serif-health/takehome/blob/main/FS_README.md)
+
 [Portfolio Submissions](https://github.com/serif-health/takehome/blob/main/PORTFOLIO.md)
