@@ -83,6 +83,8 @@ Your submission should satisfy the following:
 - **Programming Language & Libraries**: We use Vue.js and Golang internally, but you are welcome to submit in other languages, libraries, frameworks, or toolchains that you deem appropriate.
 - **Architecture**: Choose a reasonable split between backend and frontend responsibilities. For example, you might use the backend to fetch and normalize the files and the frontend to query the resulting dataset.
 - **Data Storage**: In-memory processing is acceptable for this take-home; you do not need to add a database. A database-backed approach can be treated as a follow-up extension for review discussion.
+- **Use of AI**: You may use AI tools while building your submission. If you do, we will expect a more robust and polished search experience, including thoughtful handling of edge cases in user flows.
+- **Follow-Up Round**: Candidates who move forward should expect a live code-pairing round where we add an additional feature to the submitted project.
 - **Time Investment**: We are a small engineering team with limited resources, and often have to make hard tradeoffs to meet deadlines and make rapid forward progress. We do not want this takehome to take more than a few hours out of your day. Please timebox the technical work to 2–3 hours max, with additional time for documenting your learnings and decisions.
 
 
@@ -101,11 +103,8 @@ Your submission should satisfy the following:
 ## Hints And Pointers
 
 - The index is a table-of-contents style file and may reference multiple plans and file URLs.
-- CMS transparency files can be large, nested, and inconsistent across issuers. A robust solution should not assume every file is perfectly uniform.
-- In many in-network files, provider details are kept in provider reference blocks (for example provider_references) and linked from negotiated rate entries by reference IDs. Think through how you will map those relationships.
 - Negotiated rates are usually attached to in-network items/services and often nested under negotiated_rates and negotiated_prices style structures. You may need to walk multiple nested levels to connect code, provider group, and price.
 - If provider identifiers are missing in one part of the file, check whether NPI or EIN appears in the related provider reference block instead of the negotiated price node itself.
-- A useful implementation often separates ingestion from presentation, even if both live in the same repo.
 - Consider whether you want to search by plan name, issuer, billing code, facility, location, or other fields exposed in the source files.
 - If you make simplifying assumptions, call them out clearly in the README.
 
